@@ -1,0 +1,5 @@
+<nav class="nav" *ngIf="navItemsList">
+  <a [title]="item.name" class="nav-link  text-white" [routerLink]="item.path" *ngFor="let item of navItemsList">
+      {{ item.name }}
+  </a>
+</nav>

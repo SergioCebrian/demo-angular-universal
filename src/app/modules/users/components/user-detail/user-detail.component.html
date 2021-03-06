@@ -1,0 +1,13 @@
+<section class="container-fluid" *ngIf="userDetail">
+    <div class="card" style="width: 18rem; margin: 0 auto;">
+        <div class="card-body">
+          <h5 class="card-title">{{ userDetail.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            {{ userDetail.address.street }}, {{ userDetail.address.suite }}. {{ userDetail.address.city }}
+          </h6>
+          <p class="card-text">{{ userDetail.company.catchPhrase }}.</p>
+          <a class="card-link" (click)="back()" style="cursor: pointer;">Back</a>
+          <a href="#" class="card-link">{{ userDetail.email }}</a>
+        </div>
+      </div>
+</section>

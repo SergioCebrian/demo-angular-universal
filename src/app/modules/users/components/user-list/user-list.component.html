@@ -1,0 +1,10 @@
+<div class="list-group" *ngIf="usersList">
+  <a class="list-group-item list-group-item-action" [routerLink]="user.id" *ngFor="let user of usersList">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ user.name }}</h5>
+      <small>{{ user.address.street }}, {{ user.address.suite }}. {{ user.address.city }}</small>
+    </div>
+    <p class="mb-1">{{ user.company.catchPhrase }}.</p>
+    <small>{{ user.email }}</small>
+  </a>
+</div>
